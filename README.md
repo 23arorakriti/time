@@ -28,18 +28,5 @@ This project is built with a modern, efficient, and scalable tech stack:
 - **Charting:** Recharts  
 - **Icons:** Lucide React  
 
----
 
-## 🛠️ Getting Started  
 
-Follow these steps to set up the project locally:  
-
-### Prerequisites  
-- [Node.js](https://nodejs.org/) (version 18.x or higher)  
-- npm (comes with Node.js)  
-
-### Installation & Setup  
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://your-repository-url.git
