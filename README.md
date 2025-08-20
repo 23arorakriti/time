@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+🌊 Time Tide
+Time Tide is a modern, web-based application designed to help you track your daily activities, analyze your time usage, and achieve a better work-life balance. By comparing your actual day against your ideal day, Time Tide provides clear insights into where your time goes, helping you realign your priorities and live more intentionally.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Core Features
+Hourly Time Logging: Quickly log your activities for every hour of the day with a simple, emoji-driven interface.
 
-Currently, two official plugins are available:
+Ideal Day Planning: Set your perfect daily schedule by allocating your 24 hours across different life categories.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visual Dashboard: Get an at-a-glance view of your day with beautiful pie charts that visualize your time usage.
 
-## Expanding the ESLint configuration
+Ideal vs. Actual Comparison: See a direct comparison of your intended schedule versus your actual activities to identify imbalances.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Daily Analysis: Receive a detailed breakdown of how your time spent in each category compares to your ideal goals.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Customizable Categories: Create, edit, and delete your own life categories, complete with custom names, colors, and emojis.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Persistent Storage: All your data is saved locally in your browser, so your logs and settings are preserved between sessions.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tech Stack
+This project is built with a modern, efficient, and scalable tech stack:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Framework: React with Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Language: TypeScript
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Styling: Tailwind CSS
+
+State Management: Zustand
+
+Animations: Framer Motion
+
+Charting: Recharts
+
+Icons: Lucide React
+
+🛠️ Getting Started
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+You need to have Node.js (version 18.x or higher) and npm installed on your machine.
+
+Installation & Setup
+Clone the repository (or download the project files):
+
+git clone https://your-repository-url.git
+
+Navigate to the project directory:
+
+cd timetideproj
+
+Install NPM packages:
+This command will install all the necessary dependencies listed in package.json.
+
+npm install
+
+Run the development server:
+This will start the application on a local server (usually http://localhost:5173).
+
+npm run dev
+
+The application should now be running in your browser!
